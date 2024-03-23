@@ -1,0 +1,113 @@
+*{
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    display: auto;
+}
+
+h1{
+    color: red;
+
+}
+#nav{
+    height: 50px;
+    width: 400px;
+    background-color: red;
+    color: white;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 340px;
+    background-color: red;
+    color: white;
+}
+#div1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#aside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 160px;
+    background-color: red;
+    color: white;
+}
+
+td{
+    padding: 14px;
+    height: 100px;
+    width: 133px;
+    background-color: red;
+    color: white; 
+}
+table{
+    align-items: center;
+    height: 290px;
+    border-collapse: separate;
+    border-spacing: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px){
+    *{
+        flex-wrap:wrap;
+        align-items: center;
+        background-color: blue;
+        justify-content: center;
+    }
+    #div1, #aside, #main{
+        flex-wrap:wrap;
+        width: 100%;
+    }
+    
+    table{
+        display:flex;
+        flex-wrap:wrap;
+    }
+    
+    td{
+        display:flex;
+        flex-wrap:wrap;
+       width:30%; 
+    }
+    tr{
+            display:flex;
+            flex-wrap:wrap;
+    }
+    
+}
+@media screen and (max-width: 450px){
+    *{
+        align-items: center;
+        background-color: green;
+
+    }
+    td{
+        width:100%;
+    }
+}
+@media screen and (min-width: 700px){
+    *{
+        align-items:center;
+        background-color: grey;
+    }
+    tr, table, td{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
